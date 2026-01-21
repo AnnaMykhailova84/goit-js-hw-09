@@ -1,5 +1,5 @@
 import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
+import "/simplelightbox/dist/simple-lightbox.min.css";
 
 const images = [
   {
@@ -91,7 +91,7 @@ initRender();
 
 const imagePreview = new SimpleLightbox('.gallery a', {
   captions: true,
-  captionsData: 'alt',      // беремо текст з alt
+  captionsData: 'alt',
   captionPosition: 'bottom',
   captionDelay: 250,
 });
