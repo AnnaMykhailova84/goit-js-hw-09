@@ -21,9 +21,17 @@ label {
 
 .input-text,
 .textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
   width: 100%;
   margin-top: 8px;
   border-radius: 4px;
+  padding: 7px;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  transition: border 200ms ease-in;
 }
 .input-text {
   height: 40px;
@@ -32,6 +40,12 @@ label {
 .textarea {
   resize: none;
 }
+.input-text:hover,
+.input-text:focus,
+.textarea:focus {
+  border: 1px solid #747bff;
+}
+
 .btn-submit {
   display: inline-block;
   padding: 8px 16px;
